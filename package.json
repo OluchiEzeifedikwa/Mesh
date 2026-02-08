@@ -1,0 +1,21 @@
+{
+  "name": "mesh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:backend": "cd meshapp/backend && node app.js",
+    "start:frontend": "cd meshapp/frontend && npm start",
+    "start": "concurrently -c \"blue,green\" \"npm run start:backend\" \"npm run start:frontend\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "dependencies": {
+    "cors": "^2.8.6"
+  }
+}

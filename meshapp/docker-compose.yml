@@ -1,0 +1,28 @@
+# version: "3.9"
+
+# services:
+#   db:
+#     image: postgres:15
+#     environment:
+#       POSTGRES_USER: OluchiEze
+#       POSTGRES_PASSWORD: mesh4199
+#       POSTGRES_DB: myuser
+#     ports:
+#       - "5432:5432"
+#     volumes:
+#       - db_data:/var/lib/postgresql/data
+#     restart: always
+
+#   backend:
+#     build: ./backend
+#     environment:
+#       DATABASE_URL: "postgresql://OluchiEze:mesh4199@db:5432/myuser?schema=public"
+#     depends_on:
+#       - db
+#     ports:
+#       - "3000:3000"
+#     command: sh -c "npx prisma generate && node app.js"
+#     restart: always
+
+# volumes:
+#   db_data:
